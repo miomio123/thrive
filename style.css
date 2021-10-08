@@ -26,7 +26,7 @@ html {
     border-radius: 12px;
     cursor: pointer;
     border-color: rgb(253, 176, 188);
-    border-size: 1px;
+    border: 1px;
     border-style: solid;
 }
 
@@ -75,7 +75,7 @@ html {
     border-radius: 12px;
     cursor: pointer;
     border-color: rgb(253, 176, 188);
-    border-size: 1px;
+    border: 1px;
     border-style: solid;
 }
 
