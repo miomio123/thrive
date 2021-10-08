@@ -1,36 +1,226 @@
 html {
     height: 100%;
+    color: rgb(51, 50, 53);
+    font-family: 'Noto Sans Mono', monospace;
     
 }
+
+.container-nav {
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: baseline;
+    gap: 50px;
+   
+}
+
+
+
+.element-box:hover {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    border-color: rgb(253, 176, 188);
+    border-size: 1px;
+    border-style: solid;
+}
+
+.element-box:active {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    padding: 19px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(253, 219, 236, 0.1) 0px 48px 100px 0px;
+}
+
+
+.flex-box {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    text-align: center;
+    border-radius: 12px;
+    
+}
+
+.element-box {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+
+.flex-box:hover {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    box-shadow: box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    border-color: rgb(253, 176, 188);
+    border-size: 1px;
+    border-style: solid;
+}
+
+.flex-box:active {
+    display: flex;
+    width: 200px;
+    height: 100px;
+    padding: 19px;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(253, 219, 236, 0.1) 0px 48px 100px 0px;
+}
+
+
 
 body {
     overflow: hidden; /* Hide scrollbars */
 }
 
+a {
+    text-decoration: none;
+    color:rgb(51, 50, 53);
+}
+
+a:hover {
+
+font-weight: bold;
+color:rgba(236, 75, 89, 0.911);
+cursor: pointer;
+text-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+}
+
+.back a:hover {
+    color:cadetblue;
+    text-shadow: none;
+    font-size: 16;
+
+}
+
 h1 {
+
     font-family: 'Noto Sans Mono', monospace;
     font-size: 46px;
 }
 
+h1:hover {
+
+   font-weight: bold;
+    color:rgba(236, 75, 89, 0.911);
+    cursor: pointer;
+    text-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
 div.container {
-    height: 50em;
-    position: relative }
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    width: 4em;
+    
+ }
+    
 
 div.container h1 {
-    margin: 0;
+    margin: 10;
     position: absolute;
-    top: 50%;
+    top: 20px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) }
 
 #red-dot {
-    color:red;
+    color:rgba(236, 75, 89, 0.911);
     font-size: 50px;
 }
 
-@media only screen and (max-width: 600px)  {
+
+.button:hover {
+
+    font-weight: bold;
+    color:rgba(236, 75, 89, 0.911);
+    cursor: pointer;
+    text-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+}
+
+
+
+
+/* Tooltip container */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  /* Tooltip text */
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: rgb(30, 30, 32);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 12px;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 16px;
+    height: 45px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 22px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 50%;
+    margin-left: 0;
+    top: -50px;
+
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    
+  }
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 98%; /* At the bottom of the tooltip */
+    left: 50%;
+    border-radius: 3px;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    
+  }
+
+  @media only screen and (max-width: 600px)  {
     div.container h1{
-        font-size: 2rem;
+        font-size: 56px;
     }
 }
