@@ -15,7 +15,6 @@ html {
 }
 
 
-
 .element-box:hover {
     display: flex;
     width: 200px;
@@ -125,7 +124,7 @@ h1 {
 
 h1:hover {
 
-   font-weight: bold;
+    font-weight: bold;
     color:rgba(236, 75, 89, 0.911);
     cursor: pointer;
     text-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
@@ -155,15 +154,12 @@ div.container h1 {
 
 
 .button:hover {
-
     font-weight: bold;
     color:rgba(236, 75, 89, 0.911);
     cursor: pointer;
     text-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 
 }
-
-
 
 
 /* Tooltip container */
