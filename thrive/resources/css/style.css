@@ -218,7 +218,7 @@ div.container h1 {
     
   }
 
-  @media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 600px)  {
     div.container h1{
         font-size: 24px;
     }
@@ -241,6 +241,7 @@ div.container h1 {
     .container-nav {
         display:flex;
         gap: 10px;
+        flex-direction: row;
     }
 }
 
