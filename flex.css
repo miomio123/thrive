@@ -7,6 +7,11 @@ body {
     font-family: Helvetica;
   
   }
+
+  #back a {
+    background-color: white;
+    float: left;
+  }
   
   .header {
     background-color: white;
