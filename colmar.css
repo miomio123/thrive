@@ -23,8 +23,6 @@ text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   gap: 30px;
 
@@ -37,19 +35,11 @@ text-align: center;
     width: 150px;
   }
 
-.logo .navigation {
+.colmar .navigation {
 
   text-align: center;
   height: 64px;
   padding: 20px;
-}
-
-.logo-container {
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-
 }
 
 
@@ -59,8 +49,6 @@ img{
 
 
 }
-
-
 
 .link-container {
   overflow: hidden;
@@ -95,3 +83,28 @@ img{
   background-color: #a0a0a0;
   color: white;
 }
+
+@media (min-width: 400px){
+  
+    .mobile-icons {
+      display: none;
+  }
+}
+
+
+@media (max-width: 200px){
+  
+  .mobile-icons {
+    visibility: visable;
+}
+}
+
+}
+@media (min-width: 600px){
+  
+  .colmar {
+    display: none;
+}
+}
+
+
