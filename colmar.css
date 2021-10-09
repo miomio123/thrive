@@ -1,3 +1,12 @@
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
 html {
     height: 100%;
     color: rgb(82, 75, 95);
@@ -56,33 +65,43 @@ h3 {
 }
 
 #oncampus {
-  display: block;
-  float: left;
-  clear:both
   margin-left: 24px;
-  
+  margin-top: 24px;
+ 
   
 }
 
-.text-box {
-  box-sizing: border-box;
-  width: 40%;
-  padding: 1px;
-  text-align: center;
+
+
+.oncapmus-container {
+  background-color: rgb(255, 252, 248);
+  display: flex;
+  margin-right: 24px;
+
+}
+
+
+.banner {
+  z-index: 100;
+  float: left;
+  position: relative;
+  
+}
+
+.text-box-container {
+  margin: 50px;
+  padding: 5px;
   float: right;
-  clear:both
+  
 }
 
-.banner-container img {
-  width: 60%;
-  height: auto;
-  filter: grayscale(50%);
-  -webkit-filter: grayscale(50%);
-}
 
-img{
+
+
+.mobile-icons img{
 
  height: 50px;
+ margin-left: 24px;
 
 
 }
@@ -150,4 +169,20 @@ img{
   .link-container {
     display: none;
 }
+
+
+@media (max-width: 600px){
+  
+  .oncapmus-container {
+    flex-direction: column;
+    flex-shrink: 2;
+}
+
+@media (max-width: 600px){
+  
+  .banner {
+    width: 100%;
+    height: 100%;
+  
+
 }
