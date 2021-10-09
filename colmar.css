@@ -1,4 +1,4 @@
-    overflow: hidden;
+
 
 * {
   -webkit-tap-highlight-color: transparent;
@@ -50,7 +50,7 @@ h3 {
   height: 64px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   gap: 30px;
   position: fixed;
@@ -139,9 +139,8 @@ h3 {
 
 
 .mobile-icons img{
-
- height: 70px;
- margin-left: 24px;
+ height: 100%;
+ 
 
 
 }
