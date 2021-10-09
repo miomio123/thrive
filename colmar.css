@@ -1,3 +1,5 @@
+    overflow: hidden;
+
 * {
   -webkit-tap-highlight-color: transparent;
 }
@@ -18,7 +20,8 @@ html {
 }
 
 body {
-  background-color: rgb(233, 233, 233)
+  background-color: rgb(233, 233, 233);
+  overflow: visible;
 }
 
 
@@ -29,7 +32,7 @@ h1 {
 
 
 h4 {
-font-weight: 30px;
+
 font-size: 18px;
 text-align: center;
 
@@ -50,6 +53,11 @@ h3 {
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   gap: 30px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top:0;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 
 } 
   
@@ -74,31 +82,65 @@ h3 {
   
 }
 
+.button {
+      background-color: #9995ac;
+      height: 50px;
+      width: 200px;
+      text-decoration: none;
+      border-radius: 8px;
+      text-align: center;
+      position: absolute;
+    
+  
+}
 
+
+
+.button:hover {
+  background-color: #7166a8;
+  height: 50px;
+  width: 200px;
+  text-decoration: none;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
 
 .oncapmus-container {
   background-color: rgb(255, 252, 248);
   display: flex;
   margin-right: 24px;
+  top: 0;
 
 }
 
 
 .banner {
-  z-index: 100;
-  float: left;
   position: relative;
+  top: 0;
+  max-width:100%;
+  max-height:100%;
   
 }
 
 .text-box-container {
-  margin: 150px;
-  padding: 5px;
-  float: right;
+  margin: 100px;
   
+  
+
+
+
 }
-
-
+.image-container-main {
+  display: flex;
+  margin-right: 24px;
+  top: 0;
+}
 
 
 .mobile-icons img{
@@ -193,7 +235,31 @@ h3 {
 @media (max-width: 900px){
   
   h1 {
-    font-size: 2.3vw;
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
   }
   
+}
+
+@media (max-width: 900px){
+  
+  h4 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+
+  }
+  
+}
+
+
+@media (max-width: 900px){
+  
+  .text-box-container {
+    
+    padding: 20px;
+    margin: 20px;
+
+  }
 }

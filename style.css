@@ -16,6 +16,18 @@ html {
     height: 100%;
     color: rgb(51, 50, 53);
     font-family: 'Noto Sans Mono', monospace;
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+
+::-webkit-scrollbar {
+        width: 0;  /* Remove scrollbar space */
+        background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+    /* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+        background: #FF0000;
+    }
     
 }
 
@@ -146,9 +158,6 @@ body {
     border-radius: 12px;
 }
 
-body {
-    overflow: hidden; /* Hide scrollbars */
-}
 
 a {
     text-decoration: none;
