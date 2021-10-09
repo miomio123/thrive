@@ -1,3 +1,8 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
 input,
 textarea,
 button,
