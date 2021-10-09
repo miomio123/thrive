@@ -8,13 +8,26 @@ body {
   background-color: rgb(233, 233, 233)
 }
 
+
 h1 {
+
+  font-size: 42px;
+
+}
+
+
+h4 {
 font-weight: 100;
-font-size: 24px;
+font-size: 18px;
 text-align: center;
 
 }
 
+
+h3 {
+  font-size: 22px;
+}
+ 
 
 .navigation {
   overflow: hidden;
@@ -42,6 +55,30 @@ text-align: center;
   padding: 20px;
 }
 
+#oncampus {
+  display: block;
+  float: left;
+  clear:both
+  margin-left: 24px;
+  
+  
+}
+
+.text-box {
+  box-sizing: border-box;
+  width: 40%;
+  padding: 1px;
+  text-align: center;
+  float: right;
+  clear:both
+}
+
+.banner-container img {
+  width: 60%;
+  height: auto;
+  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+}
 
 img{
 
@@ -87,24 +124,30 @@ img{
 @media (min-width: 400px){
   
     .mobile-icons {
-      display: none;
+      visibility: visable;
   }
 }
 
 
-@media (max-width: 200px){
+@media (min-width: 1000px){
   
   .mobile-icons {
-    visibility: visable;
-}
-}
-
-}
-@media (min-width: 600px){
-  
-  .colmar {
     display: none;
 }
 }
 
 
+@media (min-width: 400px){
+  
+  .colmar {
+    visibility: none;
+}
+}
+
+
+@media (max-width: 600px){
+  
+  .link-container {
+    display: none;
+}
+}
