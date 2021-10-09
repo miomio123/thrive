@@ -57,7 +57,7 @@ h3 {
   z-index: 999;
   width: 100%;
   top:0;
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+ 
 
 } 
   
@@ -102,13 +102,8 @@ h3 {
   width: 200px;
   text-decoration: none;
   border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
   text-align: center;
-  padding: 0;
-  margin: 0;
+
 }
 
 .oncapmus-container {
@@ -145,7 +140,7 @@ h3 {
 
 .mobile-icons img{
 
- height: 50px;
+ height: 70px;
  margin-left: 24px;
 
 
@@ -171,6 +166,7 @@ h3 {
   text-decoration: none;
   font-size: 17px;
   height: 64px;
+  min-width: 120px;;
  
 }
 
@@ -185,26 +181,21 @@ h3 {
   color: white;
 }
 
-@media (min-width: 400px){
-  
-    .mobile-icons {
-      visibility: visable;
-  }
-}
 
 
-@media (min-width: 1000px){
+@media (min-width: 600px){
   
   .mobile-icons {
     display: none;
+    justify-content: center;
 }
 }
 
 
-@media (min-width: 400px){
+@media (max-width: 600px){
   
   .colmar {
-    visibility: none;
+    display: none;
 }
 }
 
