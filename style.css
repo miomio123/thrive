@@ -5,6 +5,9 @@ html {
     
 }
 
+body {
+    margin: 0;
+}
 .container-nav {
     display: flex;
     background-color: #fff;
@@ -198,8 +201,6 @@ div.container h1 {
     text-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 
 }
-
-
 
 
 /* Tooltip container */
