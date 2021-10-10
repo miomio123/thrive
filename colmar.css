@@ -80,22 +80,38 @@ h3 {
 
 
 .wrapper-banener {
-  background: #F1F1F2;
+  background: #e0e0e0;
   display: flex;
+  flex-direction: row;
+  height: 400px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  margin-top: 65px;
+
 
 }
 
-.banner {
-  display: block;
-  height: 200px;
-  width: auto;
-  background-color: rgb(192, 192, 192);
-  padding: 24px;
+.banner-1 {
+  display: flex;
+  justify-content: start;
+  height: 400px;
+  width: 60%;
+  background-color: rgb(206, 206, 206);
+  border-radius: 8px;
+  
 }
 
-.banner 1{
-  background-color: red;
+
+.banner-2 {
+  display: flex;
+  justify-content: end;
+  height: 400px;
+  width:40%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  
 }
+
 
 
   .wrapper {
@@ -104,7 +120,7 @@ h3 {
     display: grid;
     width: auto;
     height: 400px;
-    grid-template: 200px 200px 200px / 2fr 1fr;
+    grid-template: 200px 200px 200px / 60% 40%;
     grid-gap: 16px;
   
     
@@ -216,5 +232,23 @@ h3 {
 @media (max-width: 600px){
   .wrapper {
     grid-template: 200px 200px 200px / 0 100%;
+  }
+}
+
+@media (max-width: 600px){
+  .wrapper-banener {
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+  
+  }
+}
+
+@media (max-width: 600px){
+  .banner-1 banner-2 {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
