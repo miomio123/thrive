@@ -154,7 +154,7 @@ h3 {
   width: 60%;
   height: 500px;
   background-color: coral;
-  background-image: url("resources/images/banner.jpg");
+  background-image: url("/resources/images/banner.jpg");
   background-size: cover; 
   border-radius: 8px;
   margin-left: 24px;
@@ -229,7 +229,7 @@ p {
   }
 
 .a {
-   background-image: url("resources/images/information-main.jpg");
+   background-image: url("/resources/images/information-main.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    position: relative;
