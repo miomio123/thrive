@@ -297,13 +297,21 @@ p {
 
 /* Third section*/
 
+.third-section card2  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  align-content: center;
+
+}
+
 .container-cards {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   position: relative;
-
-
+  
 
 }
 
@@ -314,7 +322,7 @@ p {
   justify-content: center;
   padding: 0px;
   position: relative;
-  width: 40%;
+  width: 250px;
   height: 400px;
   background: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
@@ -326,7 +334,7 @@ p {
   display: flex;
   position: relative;
   flex-direction: column;
-  width: 100%;
+  width: 250px;
   height: 100%;
   background-image: url("/resources/images/Avatar.png");
   background-repeat: no-repeat;
@@ -340,6 +348,7 @@ p {
   justify-content: flex-end;
   align-content: left;
   text-align: left;
+  width: 250px;
 
 }
   
