@@ -154,7 +154,7 @@ h3 {
   width: 60%;
   height: 500px;
   background-color: coral;
-  background-image: url(resources/images/banner.jpg);
+  background-image: url("resources/images/banner.jpg");
   background-size: cover; 
   border-radius: 8px;
   margin-left: 24px;
@@ -215,7 +215,7 @@ p {
 
     margin-top: 32px;
     display: grid;
-    width: auto;
+    width: 100%;
     height: 400px;
     grid-template: 200px 200px 200px / 60% 40%;
     grid-gap: 16px;
@@ -297,7 +297,7 @@ p {
 
 /* Third section*/
 
-.wrapper-cards {
+.container-cards {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -328,7 +328,7 @@ p {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-image: url(resources/images/Avatar.png);
+  background-image: url("resources/images/Avatar.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -344,6 +344,65 @@ p {
 }
   
   
+/* Last section */
+
+.wrapper2 {
+
+  margin-top: 32px;
+  display: grid;
+  width: 100%;
+  height: 400px;
+  grid-template: 200px 200px 200px / 60% 40%;
+  grid-gap: 16px;
+  
+}
+
+
+.card3 img{
+
+  border-radius: 8px;
+  width: 200px;
+  height: auto;
+
+}
+
+.e {
+
+  position: relative;
+  grid-column: 1 / 1;
+  grid-row: 1 / 4;
+  margin-left: 24px;
+  
+ }
+
+ .f {
+  grid-column: 2 / 4;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.g {
+  grid-column: 2 / 4;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.h {
+  grid-column: 2 / 4;
+  margin-right: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+
 /* Media*/
 
 @media (min-width: 600px){
