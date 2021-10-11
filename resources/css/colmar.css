@@ -65,8 +65,8 @@ h3 {
 
 } 
   
-.navigation a {
-    padding: 40px 0 0 0;
+.a {
+    
     word-wrap: normal;
     display: inline-block;
     width: 150px;
@@ -97,6 +97,7 @@ h3 {
    gap: 0px;
    width: 100%;
    align-content: center;
+   align-items: center;
    
  }
  
@@ -139,6 +140,7 @@ h3 {
   height: 564px;
   background-color: white;
   margin-top: 60px;
+  
   
   
 }
@@ -355,6 +357,8 @@ p {
   
 /* Last section */
 
+
+
 .wrapper2 {
 
   margin-top: 32px;
@@ -363,6 +367,7 @@ p {
   height: 400px;
   grid-template: 200px 200px 200px / 60% 40%;
   grid-gap: 16px;
+  position: relative;
   
 }
 
