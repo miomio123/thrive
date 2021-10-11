@@ -215,7 +215,7 @@ p {
 
     margin-top: 32px;
     display: grid;
-    width: 100%;
+    width: auto;
     height: 400px;
     grid-template: 200px 200px 200px / 60% 40%;
     grid-gap: 16px;
