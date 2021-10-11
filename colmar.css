@@ -46,6 +46,7 @@ h3 {
   font-size: 20px;
 }
  
+/* Navigation */
 
 .navigation {
   overflow: hidden;
@@ -79,11 +80,58 @@ h3 {
 }
 
 
+.mobile-icons img{
+  height: 60px;
+  
+ 
+ }
+ 
+ .link-container {
+   overflow: hidden;
+   background-color: rgb(243, 243, 243);
+   height: 64px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   top: 15px;
+   gap: 0px;
+   width: 100%;
+   align-content: center;
+   
+ }
+ 
+ .link-container a {
+   color: #555555;
+   text-align: center;
+   text-decoration: none;
+   font-size: 17px;
+   height: 64px;
+   min-width: 120px;
+  
+ }
+ 
+ 
+ .link-container a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ 
+ .link-container a.active {
+   background-color: #a0a0a0;
+   color: white;
+ }
+
+
+ 
+ /* First section */
+
+
+
 .wrapper-banner {
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 0px;
   position: relative;
@@ -97,22 +145,25 @@ h3 {
 
 .inside-box {
 
-/* Inside-box */
 
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
   position: relative;
   width: 60%;
   height: 500px;
   background-color: coral;
   background-image: url(images/banner.jpg);
+  background-size: cover; 
   border-radius: 8px;
   margin-left: 24px;
   text-align: left;
+  
 
 }
+
+
 
 .text-box {
   display: flex;
@@ -126,14 +177,17 @@ h3 {
   margin-left: 24px;
   text-align: left;
   margin-left: 24px;
+  font-size: 1rem;
 }
 
+p {
+  text-align: left;
+}
+
+/* Second section */
 
 
-
-
-
-  .wrapper {
+.wrapper {
 
     margin-top: 32px;
     display: grid;
@@ -142,89 +196,39 @@ h3 {
     grid-template: 200px 200px 200px / 60% 40%;
     grid-gap: 16px;
     
-  
-    
-
-
-
   }
 
-  .box {
+.box {
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     
-    
   }
 
-  .a {
+.a {
    background-image: url("images/information-main.jpg");
    background-repeat: no-repeat;
-   background-image: cover;
+   background-size: cover;
    grid-column: 1 / 1;
    grid-row: 1 / 4;
    margin-left: 24px;
   }
 
-  .b {
+.b {
     grid-column: 2 / 4;
     margin-right: 24px;
   }
 
-  .c {
+.c {
     grid-column: 2 / 4;
     margin-right: 24px;
   }
 
-  .d {
+.d {
     grid-column: 2 / 4;
     margin-right: 24px;
   }
   
-
-
-.mobile-icons img{
- height: 150%;
- 
-
-
-}
-
-.link-container {
-  overflow: hidden;
-  background-color: rgb(243, 243, 243);
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  top: 15px;
-  gap: 0px;
-  width: 100%;
-  align-content: center;
-  
-}
-
-.link-container a {
-  color: #555555;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  height: 64px;
-  min-width: 120px;
- 
-}
-
-
-.link-container a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.link-container a.active {
-  background-color: #a0a0a0;
-  color: white;
-}
-
-
+/* Media*/
 
 @media (min-width: 600px){
   
@@ -253,15 +257,26 @@ h3 {
 
 
 
-@media (max-width: 600px){
+@media (max-width: 800px){
   .wrapper {
     grid-template: 200px 200px 200px / 0 100%;
   }
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 800px){
   .wrapper-banner {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+ 
+  
+  }
+}
+
+@media (max-width: 800px){
+  .inside-box {
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -270,11 +285,12 @@ h3 {
   }
 }
 
-@media (max-width: 600px){
-  .inside-box {
+
+@media (max-width: 800px){
+  .text-box {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 900px;
  
   
   }
