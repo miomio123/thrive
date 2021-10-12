@@ -147,11 +147,12 @@ a {
   align-items: center;
   padding: 0px;
   position: relative;
-  width: 100%;
   height: 564px;
   background-color: white;
   margin-top: 60px;
   flex: 1;
+  
+
   
   
   
@@ -173,6 +174,7 @@ a {
   border-radius: 8px;
   margin-left: 24px;
   text-align: left;
+  max-width: auto;
 
 
 }
@@ -224,6 +226,9 @@ p {
   margin: 15px;
 }
 
+
+
+
 /* Second section */
 
 
@@ -233,11 +238,13 @@ p {
 
     margin-top: 32px;
     display: grid;
-    width: auto;
-    height: 400px;
-    grid-template: 200px 200px 200px / 60% 40%;
+    height: 500px;
+    grid-template: 200px 200px 200px / 1.5fr 1fr;
+  
     grid-gap: 16px;
-    flex: 2;
+    flex: 3;
+    min-width: 0;
+    
     
   }
 
@@ -255,6 +262,7 @@ p {
    grid-column: 1 / 1;
    grid-row: 1 / 4;
    margin-left: 24px;
+   width: 95%;
   }
 
 .b {
@@ -314,17 +322,28 @@ p {
   }
 
 
+
+
+
 /* Third section*/
 
 
 
+
 .third-section  {
+ 
   display: flex;
   position: relative;
-  flex-basis: content;
   justify-content: stretch;
-  align-content: center;
-  align-items: center;
+  height: fit-content;
+
+   /*second disaapears*/
+ 
+
+ 
+
+
+
  
 
 }
@@ -333,6 +352,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-basis: content;
+  height: fit-content;
+  min-width: 500px;
+  
  
 
 }
@@ -382,21 +404,6 @@ p {
 
 
 
-
-
-.third-wrapper{
-
-  margin-top: 32px;
-  display: grid;
-  width: 100%;
-  height: 400px;
-  grid-template: 200px 200px 200px / 60% 40%;
-  grid-gap: 16px;
-  position: static;
-  
- 
-  
-}
 
 
 .card3 img{
@@ -468,13 +475,18 @@ p {
   
   .link-container {
     display: none;
+    height: fit-content;
+    width: fit-content;
 }
 }
 
 
 @media (max-width: 600px){
   .wrapper {
-    grid-template: 200px 200px 200px / 0 100%;
+    grid-template: 200px 200px 200px / 0 1fr;
+    width: 100%;
+    height: fit-content;
+    width: fit-content;
   }
 }
 
@@ -490,7 +502,7 @@ p {
   }
 }
 
-@media (max-width: 900px){
+@media (max-width: 600px){
   .inside-box {
     flex-direction: column;
     align-items: center;
@@ -516,6 +528,14 @@ p {
   .card2 {
   align-items: center;
   position: relative;
+  
+}
+}
+
+
+@media (max-width: 800px){
+  .card-text h1  {
+  font-size: 2rem;
   
 }
 }
