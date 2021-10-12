@@ -354,6 +354,7 @@ p {
   flex-basis: content;
   height: fit-content;
   min-width: 500px;
+  margin-top: 150px;
   
  
 
@@ -528,6 +529,7 @@ p {
   .card2 {
   align-items: center;
   position: relative;
+  min-width: 400px;
   
 }
 }
@@ -536,6 +538,27 @@ p {
 @media (max-width: 800px){
   .card-text h1  {
   font-size: 2rem;
+  min-width: 200px;
   
 }
 }
+
+
+@media (max-width: 600px){
+  .b box  {
+    min-width: 400px;
+
+  
+}
+}
+
+
+@media (max-width: 600px){
+  .container-cards  {
+    margin-top: 0px;
+
+  
+}
+}
+
+
