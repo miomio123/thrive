@@ -384,12 +384,13 @@ p {
   display: flex;
   position: relative;
   flex-direction: row;
-  width: 250px;
-  height: 100%;
+  width: auto;
+  height: 300px;
   background-image: url("/resources/images/Avatar.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
+  background-color: ;
   
 }
 
