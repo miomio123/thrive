@@ -65,7 +65,7 @@ h3 {
 
 } 
   
-.a {
+a {
     
     word-wrap: normal;
     display: inline-block;
@@ -117,7 +117,7 @@ h3 {
    color: black;
  }
  
- .link-container a.active {
+ .link-container a:active {
    background-color: #a0a0a0;
    color: white;
  }
@@ -140,6 +140,7 @@ h3 {
   height: 564px;
   background-color: white;
   margin-top: 60px;
+  flex: 1;
   
   
   
@@ -161,6 +162,7 @@ h3 {
   border-radius: 8px;
   margin-left: 24px;
   text-align: left;
+
 
 }
 
@@ -221,6 +223,7 @@ p {
     height: 400px;
     grid-template: 200px 200px 200px / 60% 40%;
     grid-gap: 16px;
+    flex: 2;
     
   }
 
@@ -245,7 +248,7 @@ p {
     margin-right: 24px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   }
 
@@ -283,7 +286,7 @@ p {
     margin-right: 24px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   }
 
@@ -292,28 +295,31 @@ p {
     margin-right: 24px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   }
 
 
 /* Third section*/
 
-.third-section card2  {
+
+
+.third-section  {
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  flex-basis: content;
+  justify-content: stretch;
   align-content: center;
+  align-items: center;
+ 
 
 }
 
 .container-cards {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  position: relative;
-  
+  flex-basis: content;
+ 
 
 }
 
@@ -321,27 +327,29 @@ p {
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: center;
-  padding: 0px;
   position: relative;
-  width: 250px;
-  height: 400px;
+  width: 500px;
+  height: 450px;
   background: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   border-radius: 8px;
-  margin: 24px;
+  margin: 10px;
+  flex: 2;
+  
+ 
 }
 
 .image-card  {
   display: flex;
   position: relative;
-  flex-direction: column;
+  flex-direction: row;
   width: 250px;
   height: 100%;
   background-image: url("/resources/images/Avatar.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
+  
 }
 
 .card-text2 h1 p h5{
@@ -359,7 +367,10 @@ p {
 
 
 
-.wrapper2 {
+
+
+
+.third-wrapper{
 
   margin-top: 32px;
   display: grid;
@@ -367,7 +378,9 @@ p {
   height: 400px;
   grid-template: 200px 200px 200px / 60% 40%;
   grid-gap: 16px;
-  position: relative;
+  position: static;
+  
+ 
   
 }
 
@@ -445,14 +458,14 @@ p {
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 600px){
   .wrapper {
     grid-template: 200px 200px 200px / 0 100%;
   }
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 600px){
   .wrapper-banner {
     flex-direction: column;
     align-items: top;
@@ -463,7 +476,7 @@ p {
   }
 }
 
-@media (max-width: 800px){
+@media (max-width: 600px){
   .inside-box {
     flex-direction: column;
     align-items: center;
@@ -472,10 +485,19 @@ p {
 }
 
 
-@media (max-width: 800px){
+@media (max-width: 600px){
     .text-box {
     flex-direction: column;
     align-items: center;
     width: 900px;
   }
+}
+
+
+@media (max-width: 800px){
+  .card2 {
+  align-items: center;
+  position: relative;
+  
+}
 }
