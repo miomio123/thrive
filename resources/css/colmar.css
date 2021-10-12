@@ -369,7 +369,7 @@ p {
   flex-direction: column;
   align-items: left;
   position: relative;
-  width: 500px;
+  width: auto;
   height: 450px;
   background: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
