@@ -31,6 +31,21 @@ html {
     }
     
 
+.container-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.text-system {
+    text-align: center;
+    display: inline;
+    min-width: 100px;
+}
+
 
 body {
     margin: 0;
