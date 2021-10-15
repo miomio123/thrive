@@ -244,9 +244,14 @@ h2 {
 
 /* Media Query */
 
-@media screen and (max-width: 600px)  {
+@media only screen and (min-width: 600px) (max-width: 600px)  {
     .nav-links {
         display: none;
     }
 }
 
+@media only screen and (min-width: 600px) (max-width: 600px)  {
+  .navigation {
+    width: 100%;
+  }
+}
