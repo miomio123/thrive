@@ -7,15 +7,19 @@ input,
 textarea,
 button,
 select,
-a {
+ {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
+ 
+.text-system {
+    color: white;
+}
 
 html {
     height: 100%;
     color: rgb(51, 50, 53);
-    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Noto Sans Mono', Lato, monospace;
     overflow: scroll;
     overflow-x: hidden;
     }
@@ -40,11 +44,7 @@ html {
     height: auto;
 }
 
-.text-system {
-    text-align: center;
-    display: inline;
-    min-width: 100px;
-}
+
 
 
 body {
@@ -269,12 +269,12 @@ div.container h1 {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 22px;
 
     /* Position the tooltip */
-    position: absolute;
+    position: relative;
     z-index: 1;
-    bottom: 50%;
-    left: 50%;
+    bottom: 12%;
+    left: 20px;;
     margin-left: 0;
-    top: -50px;
+    top: 0px;
 
   }
   
@@ -296,6 +296,22 @@ div.container h1 {
     border-color: black transparent transparent transparent;
     
   }
+
+
+/* Footer */
+
+footer {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    background-color: #cbc0d3;
+    font-family: Lato;
+    vertical-align: middle;
+ 
+
+/* Media Query */
+
 
 @media only screen and (max-width: 600px)  {
     div.container h1{
