@@ -51,132 +51,6 @@ body {
     margin: 0;
 }
 
-.container-nav {
-    display: flex;
-    background-color: #fff;
-    justify-content: center;
-    align-items: baseline;
-    gap: 50px;
-    flex-direction: row;
-   
-}
-
-
-.element-box:hover {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    text-align: center;
-    border-radius: 12px;
-    cursor: pointer;
-    border-color: rgb(253, 176, 188);
-    border: 3px;
-    border-style: solid;
-}
-
-.element-box:active {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    padding: 19px;
-    text-align: center;
-    border-radius: 12px;
-    cursor: pointer;
-    border-color: rgb(253, 176, 188);
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(253, 219, 236, 0.1) 0px 48px 100px 0px;
-}
-
-.element-box {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-    text-align: center;
-    border-radius: 12px;
-}
-
-
-.flex-box {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-    text-align: center;
-    border-radius: 12px;
-    
-}
-
-
-
-.flex-box:hover {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    text-align: center;
-    border-radius: 12px;
-    cursor: pointer;
-    border-color: rgb(253, 176, 188);
-    border: 1px;
-    border-style: solid;
-}
-
-.flex-box:active {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    padding: 19px;
-    text-align: center;
-    border-radius: 12px;
-    cursor: pointer;
-    border-color: rgb(253, 176, 188);
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(253, 219, 236, 0.1) 0px 48px 100px 0px;
-}
-
-.excercise-box:hover {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-    text-align: center;
-    border-radius: 12px;
-    cursor: pointer;
-    border-color: rgb(253, 176, 188);
-    border: 1px;
-    border-style: solid;
-}
-
-.excercise-box:active {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    padding: 19px;
-    text-align: center;
-    border-radius: 12px;
-    cursor: pointer;
-    border-color: rgb(253, 176, 188);
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(253, 219, 236, 0.1) 0px 48px 100px 0px;
-}
-
-.excercise-box {
-    display: flex;
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-    text-align: center;
-    border-radius: 12px;
-}
-
 
 a {
     text-decoration: none;
@@ -192,11 +66,6 @@ text-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 
 }
 
-.back a:hover {
-    text-shadow: none;
-    
-
-}
 
 h1 {
 
@@ -212,22 +81,6 @@ h1:hover {
     text-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
-div.container {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    width: 4em;
-    
- }
-    
-
-div.container h1 {
-    margin: 10;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
 
 #red-dot {
     color:rgba(236, 75, 89, 0.911);
@@ -235,14 +88,6 @@ div.container h1 {
 }
 
 
-.button:hover {
-
-    font-weight: bold;
-    color:rgba(236, 75, 89, 0.911);
-    cursor: pointer;
-    text-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-
-}
 
 
 /* Tooltip container */
@@ -271,7 +116,7 @@ div.container h1 {
     /* Position the tooltip */
     position: relative;
     z-index: 1;
-    bottom: 12%;
+    bottom: 60%;
     left: 20px;;
     margin-left: 0;
     top: 0px;
@@ -320,28 +165,6 @@ footer {
 }
 
 
-@media only screen and (max-width: 600px)  {
-.element-box {
-    flex-shrink: 2;
-}
-}
-
-@media (max-width: 400px)  {
-.flex-box {
-    flex-shrink: 2;
-    width: 70%;
-    height: 70%;
-    padding: 20px;
-}
-}
-
-@media (max-width: 680px)  {
-.container-nav {
-    display:flex;
-    gap: 10px;
-    flex-direction: column;
-    align-items: center;
-}
 }
 
 @media only screen and  (max-width: 400px)  {
