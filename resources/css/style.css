@@ -88,9 +88,14 @@ h2 {
     display: flex;
     flex-direction: row;
     height: 50px;
-    width: auto;
+    width: 100%;
     background-color: #f5f5f5;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 999;
+    margin: 0 auto;
+    gap: 20px;
+    
     
 
  
@@ -98,9 +103,10 @@ h2 {
 }
 
 .logo img{
-        float: left;
     position: relative;
-    margin: 10px 15px 15px 10px;
+    
+    
+    
     
 }
 
@@ -111,9 +117,12 @@ h2 {
 .nav-links {
     display: flex;
     align-content: center;
-    justify-content: right;
+    justify-content: flex-end;
     flex-direction: row;
-    gap: 30px;
+    gap: 80px;
+    float: right;
+    width: 80%;
+    margin-right: 20px;
 
 }
 
@@ -128,8 +137,13 @@ h2 {
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
+    min-width: 60px;
     height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+
   }
   
   /* Hide default HTML checkbox */
@@ -192,17 +206,20 @@ h2 {
   /*writing*/
 
   .writing-container {
-      background-color:rgb(51, 50, 53),
       display: flex;
       justify-content: center;
-      height: 500px;
+      height: 700px;
       width: auto;
       align-items: center;
+      flex-direction: row;
+    
+
 
   }
 
 
   .poem p {
+      display:flex;
     position: relative;
     height: auto;
     width: 500px;
@@ -212,25 +229,24 @@ h2 {
 
 
   .illustration img {
+    display: flex;
     position: relative;
-    height: 300px;
+    height: 500px;
     width: auto;
 
   }
 
 /* Footer */
 
-footer {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    height: 70px;
-    background-color: #cbc0d3;
-    font-family: Lato;
-    vertical-align: middle;
-    bottom: 0px;
+
+
  
 
 /* Media Query */
 
+@media screen and (max-width: 600px)  {
+    .nav-links {
+        display: none;
+    }
+}
 
